@@ -1,0 +1,67 @@
+
+
+#headerlinebreak {
+
+	color: orange;
+}
+#imgHappy {
+	width: 200px;
+	height: 180px;
+}
+img#imgPossitive {
+	width: 250px;
+	height: 180px;
+}
+ul {
+	list-style:decimal;
+
+}
+body {
+	background-color: dimgray;
+	color:white;
+	font-family: arial;
+}
+p{
+	text-align: left;
+
+}
+
+p::first-letter{
+	font-size: 150%;
+	text-transform: capitalize;
+}
+
+p b {
+	color: darkorange;
+	text-transform: none;
+}
+
+li pre em{
+	color:orange;
+	text-transform: capitalize;
+}
+li pre{
+	font-size: 80%;
+}
+
+ul li i{
+	color: orange;
+}
+.headercolor {
+	color: skyblue;
+	text-transform: capitalize;
+	text-align: left;
+}
+ol li a {
+	color: red;
+	text-decoration: none;
+}
+li a:hover{
+	color: yellowgreen;
+	text-decoration: underline;
+}
+
+.listFavorite{
+	display: flex;
+	flex-direction: column-reverse;
+}

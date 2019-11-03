@@ -1,0 +1,13 @@
+.item1 { grid-area: 1 / span 2; }
+.item2 { grid-area: 1 / span 2; }
+.item3 { grid-area: 2/1/4/3; }
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color: blue;  
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+}

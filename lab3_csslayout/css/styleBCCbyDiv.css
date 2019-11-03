@@ -1,0 +1,65 @@
+/* Section: format */
+body {
+	font: 0.9em/1.2em, Arial, sans-serif;
+	background-color: lightgray;
+	color: white;
+}
+
+section {
+	padding: 10px auto;
+	background-image: url('bridge.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+
+#headerleft{
+	float: left;
+	text-align: left;
+}
+
+#headerright{
+	text-align: right;
+}
+
+
+/* Section: grid */
+
+#container{
+	display:grid;
+	grid-template-columns: repeat(1,minmax(200px,auto));
+	grid-template-rows: repeat(1,minmax(50px,auto));
+	grid-gap: 0px;	
+}
+
+#header{
+	display: grid;
+	grid-template-columns: repeat(2,minmax(200px,auto));
+	grid-gap: 0px;
+}
+
+#content{
+	display:grid;
+	grid-template-columns: repeat(2,minmax(200px,auto));
+	grid-gap: 10px;	
+
+}
+
+#content > div {
+	background-color: green;
+	padding: 10px auto;
+	text-align: left;
+}
+
+#aside {
+	display:grid;
+	grid-template-columns: repeat(2,minmax(200px,auto));
+	grid-template-rows: repeat(2,minmax(100px,auto));
+	grid-gap: 5px;
+}
+
+#aside > div {
+	background-color: orange;
+	padding: 5px auto;
+}

@@ -1,0 +1,50 @@
+body {
+	width: 90%;
+	max-width: 900px;
+	margin: 2em auto;
+	font: 0.9em/2.0em Arial,sans-serif;
+}
+
+.container {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(12,minmax(0,1fr));
+	background-color: lightgray;
+}
+
+section {
+	text-align: left;
+	background-color: orange;
+}
+aside {
+	text-align: left;
+	background-color: green;
+}
+
+
+
+header, footer {
+
+	text-align: left;
+}
+
+/* GridWay 1: / */;
+header {
+	grid-row:1;
+	grid-column: 1/12;
+}
+
+section {
+	grid-row: 2/3;
+	grid-column: 1/6;
+}
+
+aside {
+	grid-row: 2/3;
+	grid-column: 7/12;
+}
+
+footer {
+	grid-row: 4;
+	grid-column: 1/12;
+}

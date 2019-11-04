@@ -5,9 +5,9 @@ body {
 	color: white;
 }
 
-section {
+#section {
 	padding: 10px auto;
-	background-image: url('bridge.jpg');
+	background-image: url('../images/bridge.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;

@@ -25,6 +25,7 @@
 
 <div class="container">
 	<h3>New Product Form</h3>
+	<!--form-->
 	<div class="row">
 		<div class="col-sm-6">
 			<form>
@@ -40,10 +41,16 @@
 				<div class="form-group"><label>Supplier</label><select class="form-control" id="supplier"><option>Walmart</option><option>Hyvee</option><option>Target</option></select></div>
 				<div class="form-group"><label>Date supplied</label><input class="form-control" type="date" id="date"></div>
 				<div class="form-group"><p class="text-muted">Enter a valid Date.</p></div>
-				<div class="form-group" id="buttongrps"><button class="btn btn-outline-dark" id="reset">Reset</button> <button class="btn btn-outline-danger" id="cancel">Cancel</button> <button class="btn btn-outline-primary" id="submit" onclick="displayNewProductPopup2()">Add Product</button> </div>
+				<div class="form-group" id="buttongrps"><button class="btn btn-outline-dark" id="reset">Reset</button> <button class="btn btn-outline-danger" id="cancel">Cancel</button><button class="btn btn-outline-primary" id="submit" type="button" onclick="displayNewProductPopup1()">Add Product</button> </div>
+
 			</form>
 		</div>
 	</div>
+
+	<!--clock -->
+	<p>Clock</p>
+	<p id="clock"></p>
+
 </div>
 
 <div>

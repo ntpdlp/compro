@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Web Form 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/lab5solution.js"></script>
+</head>
+<body>
+<div class="container">
+<form autocomplete="off">
+	<!-- form data -->
+	<div class="form-group"><label>Email address</label><input  class="form-control" type="email" name="txtemail" id="email" placeholder="Enter email"></div>
+	<div class="form-group"><p class="text-muted">We'll never share your email with anyone else</p></div>
+	<div class="form-group"><label>Password</label><input  class="form-control" type="password" name="password" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}"></div>
+	<div class="form-group"><label>URL</label><input class="form-control" type="url" pattern="^[http:|https:]\/\/.*" id="url" name="url"></div>
+	<div class="form-group"><input class="form-group form-checkbox" type="checkbox">Remember me</div>
+	<div class="form-group"><button type="button" class="btn btn-primary" onclick="displayLoginConcole()">Submit</button></div>
+</form>
+</div>
+<div>
+	<a href="http://validator.w3.org/check/referer"><img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html-validator"/></a>
+</div>
+</body>
+</html>

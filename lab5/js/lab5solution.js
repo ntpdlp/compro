@@ -165,7 +165,7 @@ printFibo(n=6, a=0, b=1);//0, 1, 1, 2, 3, 5
 printFibo(n=10, a=0, b=1);//0, 1, 1, 2, 3, 5, 8, 13, 21, 34
 
 ////////////////////////////////////////////////////////////////
-//11a. Login Form : show value on console
+//11. Login Form : show value on console
 function displayLoginConcole(){
 	let email = document.getElementById('email').value;
 	let password = document.getElementById('password').value;
@@ -176,7 +176,7 @@ function displayLoginConcole(){
 	console.log("URL: " + url);
 }
 
-/*
+
 function displayNewProductPopup1(){
 	let product = document.getElementById("product").value;
 	let name = document.getElementById("name").value;
@@ -188,27 +188,29 @@ function displayNewProductPopup1(){
 	console.log(product);
 	console.log(name);
 	console.log(unit);
-	console.log(quantity);
+	console.log(quantity)
 	console.log(supplier);
 	console.log(date);
 
-	let output = product + " , " + name + " , " + unit + " , " + quantity + " , " + date;
-	alert(output);
+	let output = "Product Number:" + product + " \n " + "Product Name:" + name + " \n " + "Unit Price:" + unit + " \n " + "Quantity:" + quantity + " \n " + "Date:" + date;
+	window.alert(output);
 	console.log(output);
 
 }
-*/
 
-function displayNewProductPopup2(){
-    window.alert(
-        `Product Number: ${document.getElementById('product').value}
-        Product Name: ${document.getElementById('name').value} 
-        Unit Price: ${document.getElementById('unit').value}
-        Quantity: ${document.getElementById('quantity').value}
-        Supplier: ${document.getElementById('supplier').value}
-        Date: ${document.getElementById('date').value}`
-    )
+
+////////////////////////////////////////////////////////////////
+//12. Login Form : show value on console
+var myVar = setInterval(myTimer,1000);
+function myTimer(){
+	var d = new Date();
+	document.getElementById("clock").innerHTML = d.toLocaleTimeString();
 }
+
+
+
+
+
 
 
 
